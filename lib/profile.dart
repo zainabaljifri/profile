@@ -53,7 +53,7 @@ class _ProfileState extends State<Profile> {
                 const CircleAvatar(
                   radius: 30.0,
                   backgroundImage: NetworkImage(
-                      'https://i.pinimg.com/originals/e5/f8/82/e5f882d97e4344fa200569f3ab997a23.gif'),
+                      'https://i.gifer.com/NiT5.gif'),
                   backgroundColor: Colors.transparent,
                 ),
                  Padding(
