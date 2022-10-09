@@ -163,7 +163,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            padding: const EdgeInsets.all(15.0),
+                            padding: const EdgeInsets.all(10.0),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15),
                             ),
@@ -181,6 +181,7 @@ class _LoginPageState extends State<LoginPage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
+                            SizedBox(height: 16),
                             const Text(
                               'Don\'t have an account? ',
                               style: TextStyle(fontSize: 16),

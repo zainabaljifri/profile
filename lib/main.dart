@@ -13,6 +13,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        fontFamily: 'Poppins',
         appBarTheme: const AppBarTheme(
           iconTheme: IconThemeData(color: Colors.black),
           foregroundColor: Colors.black,
