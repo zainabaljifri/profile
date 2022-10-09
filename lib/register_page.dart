@@ -24,8 +24,12 @@ class _RegisterPageState extends State<RegisterPage> {
     if (_formKey.currentState!.validate()) {
       // print('valid input');
       // Navigator.of(context).pushReplacementNamed("/profile");
-      Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Profile(fname: _fname, lname:_lname,email: _email, password: _password)));
-
+      Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => Profile(
+              fname: _fname,
+              lname: _lname,
+              email: _email,
+              password: _password)));
     }
   }
 
@@ -50,7 +54,7 @@ class _RegisterPageState extends State<RegisterPage> {
               children: [
                 const Text(
                   'Welcome!',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
+                  style: TextStyle(fontWeight: FontWeight.w700, fontSize: 40),
                 ),
                 const Padding(
                   padding: EdgeInsets.only(top: 10, left: 40, right: 40),
@@ -327,7 +331,10 @@ class _RegisterPageState extends State<RegisterPage> {
                               : null,
                           child: const Text(
                             'Register',
-                            style: TextStyle(fontSize: 20),
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
                         ),
                         Row(
@@ -352,7 +359,7 @@ class _RegisterPageState extends State<RegisterPage> {
                               child: const Text(
                                 'Login',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w700,
                                     fontSize: 16,
                                     color: Colors.deepPurple),
                               ),

@@ -27,7 +27,7 @@ class _ProfileState extends State<Profile> {
             //   child:
             const Text(
           'Profile',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 26),
+          style: TextStyle(fontWeight: FontWeight.w500, fontSize: 24),
         ),
         // ),
         backgroundColor: Colors.transparent,
@@ -62,14 +62,14 @@ class _ProfileState extends State<Profile> {
                   padding: EdgeInsets.all(20.0),
                   child: Text(
                     '${widget.fname} ${widget.lname}',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+                    style: TextStyle(fontWeight: FontWeight.w600, fontSize: 30),
                   ),
                 ),
                 Container(
                   margin: const EdgeInsetsDirectional.only(
                       start: 30, end: 30, top: 10, bottom: 20),
                   child: TextField(
-                    style: const TextStyle(fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontWeight: FontWeight.w600),
                     enabled: false,
                     controller: TextEditingController(text: "${widget.fname}"),
                     decoration: const InputDecoration(
@@ -85,7 +85,7 @@ class _ProfileState extends State<Profile> {
                   margin: const EdgeInsetsDirectional.only(
                       start: 30, end: 30, top: 10, bottom: 20),
                   child: TextField(
-                    style: const TextStyle(fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontWeight: FontWeight.w600),
                     enabled: false,
                     controller: TextEditingController(text: "${widget.lname}"),
                     decoration: const InputDecoration(
@@ -101,7 +101,7 @@ class _ProfileState extends State<Profile> {
                   margin: const EdgeInsetsDirectional.only(
                       start: 30, end: 30, top: 10, bottom: 20),
                   child: TextField(
-                    style: const TextStyle(fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontWeight: FontWeight.w600),
                     enabled: false,
                     controller: TextEditingController(text: "${widget.email}"),
                     decoration: const InputDecoration(
@@ -117,7 +117,7 @@ class _ProfileState extends State<Profile> {
                   margin: const EdgeInsetsDirectional.only(
                       start: 30, end: 30, top: 10, bottom: 20),
                   child: TextField(
-                    style: const TextStyle(fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontWeight: FontWeight.w600),
                     enabled: false,
                     obscureText: _passwordHidden,
                     controller:

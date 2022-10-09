@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'validation.dart';
 import 'profile.dart';
+
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -19,8 +20,12 @@ class _LoginPageState extends State<LoginPage> {
     setState(() => _submitted = true);
     if (_formKey.currentState!.validate()) {
       // Navigator.of(context).pushReplacementNamed("/profile");
-      Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Profile(fname: 'Ed', lname:'Eddie',email: _email, password: _password)));
-
+      Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => Profile(
+              fname: 'Ed',
+              lname: 'Eddie',
+              email: _email,
+              password: _password)));
     }
   }
 
@@ -45,7 +50,7 @@ class _LoginPageState extends State<LoginPage> {
               children: [
                 const Text(
                   'Hello Again!',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
+                  style: TextStyle(fontWeight: FontWeight.w700, fontSize: 40),
                 ),
                 const Padding(
                   padding: EdgeInsets.only(top: 10, left: 40, right: 40),
@@ -175,7 +180,10 @@ class _LoginPageState extends State<LoginPage> {
                               : null,
                           child: const Text(
                             'Login',
-                            style: TextStyle(fontSize: 20),
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
                         ),
                         Row(
@@ -202,7 +210,7 @@ class _LoginPageState extends State<LoginPage> {
                               child: const Text(
                                 'Register',
                                 style: TextStyle(
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w700,
                                     fontSize: 16,
                                     color: Colors.deepPurple),
                               ),
