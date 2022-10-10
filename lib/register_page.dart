@@ -205,14 +205,14 @@ class _RegisterPageState extends State<RegisterPage> {
                               labelText: 'Enter your password',
                               suffixIcon: IconButton(
                                 icon: Icon(
-                                  // Based on passwordVisible state choose the icon
+                                  // Based on _passwordHidden state choose the icon
                                   _passwordHidden
                                       ? Icons.visibility
                                       : Icons.visibility_off,
                                   // color: Colors.deepPurple[800],
                                 ),
                                 onPressed: () {
-                                  // Update the state i.e. toogle the state of passwordVisible variable
+                                  // Update the state i.e. toogle the state of _passwordHidden variable
                                   setState(() {
                                     _passwordHidden = !_passwordHidden;
                                   });
@@ -263,14 +263,14 @@ class _RegisterPageState extends State<RegisterPage> {
                               labelText: 'Confirm your password',
                               suffixIcon: IconButton(
                                 icon: Icon(
-                                  // Based on passwordVisible state choose the icon
+                                  // Based on _passwordHidden state choose the icon
                                   _passwordHidden
                                       ? Icons.visibility
                                       : Icons.visibility_off,
                                   // color: Colors.deepPurple[800],
                                 ),
                                 onPressed: () {
-                                  // Update the state i.e. toogle the state of passwordVisible variable
+                                  // Update the state i.e. toogle the state of _passwordHidden variable
                                   setState(() {
                                     _passwordHidden = !_passwordHidden;
                                   });
